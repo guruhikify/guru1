@@ -1,8 +1,14 @@
-import JustDial from './justdial'; // Import the component
+import Justdial from '.justdial';
+import justdial from './justdial';
 
 export default {
-  title: 'Components/JustDial', // Storybook title
-  component: JustDial,
+  title: 'Components/justdial',
+  component: justdial,
 };
 
-export const Default = () => <JustDial />;
+const Template = (args) => <justdial {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  // Add default props here
+};
